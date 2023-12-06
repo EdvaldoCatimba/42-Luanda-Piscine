@@ -40,8 +40,7 @@ void			ft_putchar(char c);
 int				ft_strlen(char *str);
 void			ft_putstr(char *str);
 int				ft_errors(char **tab);
-
-typedef struct	s_bsq
+typedef struct s_bsq
 {
 	int	i;
 	int	j;
@@ -51,8 +50,7 @@ typedef struct	s_bsq
 	int	bigst2;
 	int	stat_bigst;
 }				t_bsq;
-
-typedef struct	s_read
+typedef struct s_read
 {
 	int		x;
 	int		size;
@@ -63,8 +61,7 @@ typedef struct	s_read
 	char	*str;
 	char	b[5];
 }				t_read;
-
-typedef struct	s_pos
+typedef struct s_pos
 {
 	int		i[3];
 	int		*pos;

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   alg_demineur.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: efaustin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/05 08:45:04 by efaustin          #+#    #+#             */
+/*   Updated: 2023/12/05 10:20:16 by efaustin         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "bsq.h"
 
-int		dem(int left, int up, int upleft)
+int	dem(int left, int up, int upleft)
 {
 	if (left <= up && left <= upleft)
 		return (left + 1);
@@ -11,7 +23,7 @@ int		dem(int left, int up, int upleft)
 	return (0);
 }
 
-int		**ft_chartab_to_inttab(char **tab, int size_y, int size_x, char *carac)
+int	**ft_chartab_to_inttab(char **tab, int size_y, int size_x, char *carac)
 {
 	int i[2];
 	int **ret;
